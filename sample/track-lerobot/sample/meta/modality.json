@@ -1,0 +1,82 @@
+{
+  "video": {
+    "front_image": {
+      "original_key": "observation.images.front_image"
+    },
+    "left_image": {
+      "original_key": "observation.images.left_image"
+    },
+    "right_image": {
+      "original_key": "observation.images.right_image"
+    },
+    "rear_image": {
+      "original_key": "observation.images.rear_image"
+    }
+  },
+  "state": {
+    "x": {
+      "start": 0,
+      "end": 1,
+      "absolute": true,
+      "dtype": "float32",
+      "original_key": "observation.state"
+    },
+    "y": {
+      "start": 1,
+      "end": 2,
+      "absolute": true,
+      "dtype": "float32",
+      "original_key": "observation.state"
+    },
+    "z": {
+      "start": 2,
+      "end": 3,
+      "absolute": true,
+      "dtype": "float32",
+      "original_key": "observation.state"
+    },
+    "yaw": {
+      "start": 3,
+      "end": 4,
+      "absolute": true,
+      "dtype": "float32",
+      "original_key": "observation.state"
+    }
+  },
+  "action": {
+    "x": {
+      "start": 0,
+      "end": 1,
+      "absolute": false,
+      "dtype": "float32",
+      "original_key": "action"
+    },
+    "y": {
+      "start": 1,
+      "end": 2,
+      "absolute": false,
+      "dtype": "float32",
+      "original_key": "action"
+    },
+    "z": {
+      "start": 2,
+      "end": 3,
+      "absolute": false,
+      "dtype": "float32",
+      "original_key": "action"
+    },
+    "yaw": {
+      "start": 3,
+      "end": 4,
+      "absolute": false,
+      "dtype": "float32",
+      "original_key": "action"
+    }
+  },
+  "annotation": {
+    "language.language_instruction": {
+      "original_key": "task_index"
+    }
+  },
+  "action_horizon": 8
+}

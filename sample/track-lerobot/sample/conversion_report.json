@@ -1,0 +1,26 @@
+{
+  "dataset_root": "sample/track-lerobot/sample",
+  "source_root": "sample/rollout_sample",
+  "dataset_name": "sample",
+  "split": "train",
+  "fps": 10.0,
+  "dt": 0.1,
+  "action_horizon": 8,
+  "total_episodes": 8,
+  "total_frames": 1813,
+  "total_videos": 4,
+  "total_shards": 1,
+  "skipped_shards": 0,
+  "rejected_episodes": 0,
+  "rejections": [],
+  "context_index_built": true,
+  "context_token_budgets": [
+    1024
+  ],
+  "context_camera_names": [
+    "front"
+  ],
+  "use_bats": false,
+  "use_hash_dedup": false,
+  "dhash_threshold": 10
+}

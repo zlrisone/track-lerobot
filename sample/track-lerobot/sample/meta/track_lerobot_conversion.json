@@ -1,0 +1,23 @@
+{
+  "source_root": "/data1/yizhang/Track/sample/rollout_sample",
+  "dataset_name": "sample",
+  "split": "train",
+  "fps": 10.0,
+  "dt": 0.1,
+  "action_horizon": 8,
+  "episodes_per_file": 20,
+  "files_per_chunk": 50,
+  "max_episodes": null,
+  "context_token_budgets": [
+    1024
+  ],
+  "context_camera_names": [
+    "front"
+  ],
+  "context_policy_version": "lerobot_sliding_short_long_v1",
+  "cache_policy_version": "track-four-view-v1",
+  "use_bats": false,
+  "use_hash_dedup": false,
+  "dhash_threshold": 10,
+  "build_context_index": true
+}

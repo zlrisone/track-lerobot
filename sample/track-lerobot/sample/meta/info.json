@@ -1,0 +1,223 @@
+{
+  "codebase_version": "v3.0",
+  "dataset_name": "sample",
+  "robot_type": "habitat_spot",
+  "total_episodes": 8,
+  "total_frames": 1813,
+  "total_tasks": 8,
+  "total_videos": 4,
+  "chunks_size": 50,
+  "fps": 10.0,
+  "splits": {
+    "train": "0:8"
+  },
+  "data_path": "data/chunk-{chunk_index:03d}/part-{file_index:03d}.parquet",
+  "video_path": {
+    "front_image": "videos/front_image/chunk-{chunk_index:03d}/part-{file_index:03d}.mp4",
+    "left_image": "videos/left_image/chunk-{chunk_index:03d}/part-{file_index:03d}.mp4",
+    "right_image": "videos/right_image/chunk-{chunk_index:03d}/part-{file_index:03d}.mp4",
+    "rear_image": "videos/rear_image/chunk-{chunk_index:03d}/part-{file_index:03d}.mp4"
+  },
+  "features": {
+    "observation.images.front_image": {
+      "dtype": "video",
+      "shape": [
+        384,
+        384,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ],
+      "info": {
+        "video.fps": 10.0,
+        "video.height": 384,
+        "video.width": 384,
+        "video.channels": 3
+      }
+    },
+    "observation.images.left_image": {
+      "dtype": "video",
+      "shape": [
+        384,
+        384,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ],
+      "info": {
+        "video.fps": 10.0,
+        "video.height": 384,
+        "video.width": 384,
+        "video.channels": 3
+      }
+    },
+    "observation.images.right_image": {
+      "dtype": "video",
+      "shape": [
+        384,
+        384,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ],
+      "info": {
+        "video.fps": 10.0,
+        "video.height": 384,
+        "video.width": 384,
+        "video.channels": 3
+      }
+    },
+    "observation.images.rear_image": {
+      "dtype": "video",
+      "shape": [
+        384,
+        384,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ],
+      "info": {
+        "video.fps": 10.0,
+        "video.height": 384,
+        "video.width": 384,
+        "video.channels": 3
+      }
+    },
+    "observation.state": {
+      "dtype": "float32",
+      "shape": [
+        4
+      ],
+      "names": [
+        "x",
+        "y",
+        "z",
+        "yaw"
+      ]
+    },
+    "action": {
+      "dtype": "float32",
+      "shape": [
+        32
+      ],
+      "names": [
+        "action"
+      ]
+    },
+    "action.padding_mask": {
+      "dtype": "bool",
+      "shape": [
+        8
+      ],
+      "names": [
+        "horizon"
+      ]
+    },
+    "context.index_key": {
+      "dtype": "string",
+      "shape": [
+        1
+      ],
+      "names": [
+        "context_index_key"
+      ]
+    },
+    "timestamp": {
+      "dtype": "float64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "timestamp"
+      ]
+    },
+    "task_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "task_index"
+      ]
+    },
+    "episode_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "episode_index"
+      ]
+    },
+    "frame_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "frame_index"
+      ]
+    },
+    "index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "index"
+      ]
+    },
+    "next.done": {
+      "dtype": "bool",
+      "shape": [
+        1
+      ],
+      "names": [
+        "done"
+      ]
+    },
+    "sample.action_available": {
+      "dtype": "bool",
+      "shape": [
+        1
+      ],
+      "names": [
+        "action_available"
+      ]
+    }
+  },
+  "navvla": {
+    "schema_version": "0.1",
+    "context_policy_version": "lerobot_sliding_short_long_v1",
+    "cache_policy_version": "track-four-view-v1",
+    "action_horizon": 8,
+    "action_dim": 4,
+    "state_dim": 4,
+    "control_frequency_hz": 10.0,
+    "episodes_per_file": 20,
+    "files_per_chunk": 50,
+    "action_mode": "anchor_relative_planar_pose",
+    "action_axis_policy": "source_x_neg_y_neg_theta_then_rotate_by_integrated_theta",
+    "action_anchor": "current_frame_initial_local_frame",
+    "integration_dt": 0.1,
+    "tail_action_policy": "repeat_last_accumulated_pose_to_horizon",
+    "padding_mask_policy": "all_false_after_repeat_last_padding",
+    "state_policy": "[world_x, -world_z, world_y_height, -world_yaw]",
+    "source_state_fields": {
+      "robot_pos": "[world_x, world_y_height, world_z]",
+      "robot_yaw": "world_+Y_rad"
+    }
+  }
+}

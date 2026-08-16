@@ -1,0 +1,38 @@
+{
+  "front": {
+    "name": "front",
+    "video_key": "front_image",
+    "viewpoint_type": "front",
+    "azimuth_rad": 0.0,
+    "intrinsics": null,
+    "extrinsics_body": null,
+    "calibration_status": "unknown"
+  },
+  "left": {
+    "name": "left",
+    "video_key": "left_image",
+    "viewpoint_type": "left",
+    "azimuth_rad": 1.5707963267948966,
+    "intrinsics": null,
+    "extrinsics_body": null,
+    "calibration_status": "unknown"
+  },
+  "right": {
+    "name": "right",
+    "video_key": "right_image",
+    "viewpoint_type": "right",
+    "azimuth_rad": -1.5707963267948966,
+    "intrinsics": null,
+    "extrinsics_body": null,
+    "calibration_status": "unknown"
+  },
+  "rear": {
+    "name": "rear",
+    "video_key": "rear_image",
+    "viewpoint_type": "rear",
+    "azimuth_rad": 3.141592653589793,
+    "intrinsics": null,
+    "extrinsics_body": null,
+    "calibration_status": "unknown"
+  }
+}

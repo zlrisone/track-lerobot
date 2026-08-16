@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.1",
+  "context_policy_version": "lerobot_sliding_short_long_v1",
+  "cache_policy_version": "track-four-view-v1",
+  "frame_metadata": "meta/navvla_frame_metadata.jsonl",
+  "video_index": "meta/navvla_video_index.parquet",
+  "history_fields": [
+    "context.index_key",
+    "current_tvi_time",
+    "history_steps",
+    "history_blocks",
+    "history_token_refs",
+    "history_mask"
+  ],
+  "context_index_manifest": "meta/navvla_context_index_manifest.json",
+  "context_index": "meta/context_index/budget_<budget>",
+  "context_meta": "meta/context_index/budget_<budget>/context_meta.parquet",
+  "context_refs": "meta/context_index/budget_<budget>/refs.parquet",
+  "context_arrays": "meta/context_index/budget_<budget>/context_arrays",
+  "context_debug": "cache/context_index_debug/budget_<budget>/train.parquet"
+}

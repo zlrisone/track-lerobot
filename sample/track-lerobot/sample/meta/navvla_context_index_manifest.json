@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "split": "train",
+  "default_token_budget": 1024,
+  "available_token_budgets": [
+    1024
+  ],
+  "entries": {
+    "1024": {
+      "token_budget": 1024,
+      "context_dir": "meta/context_index/budget_1024",
+      "meta_path": "meta/context_index/budget_1024/context_meta.parquet",
+      "refs_path": "meta/context_index/budget_1024/refs.parquet",
+      "arrays_path": "meta/context_index/budget_1024/context_arrays",
+      "debug_path": "cache/context_index_debug/budget_1024/train.parquet"
+    }
+  }
+}

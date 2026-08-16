@@ -1,0 +1,10 @@
+# Python
+**/__pycache__/
+*.py[cod]
+
+# Local simulation data
+/sim_data/
+
+# Local datasets and tests
+/data/
+/tests/
