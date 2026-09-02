@@ -1,0 +1,20 @@
+dataset_root: /data1/yizhang/data/evt-bench
+checkpoint_path: /data1/yizhang/Pretrained_model/Qwen3-VL-2B-Instruct
+worklist_dir: /data1/yizhang/cache/worklists/qwen3_vl_2b_pooled_history_4_mmap
+
+splits: [AT, DT, STT]
+profile: qwen3_vl_2b_pooled_history_4_mmap
+encoder_revision: main
+
+shard_size: 8192
+batch_size: 8
+image_size: [384, 384]
+output_grid: [2, 2]
+token_count: 4
+hidden_dim: 2048
+
+# These are profile-specific assertions, not defaults for arbitrary Qwen models.
+expected_image_grid_thw: [1, 24, 24]
+expected_patch_size: 16
+expected_temporal_patch_size: 2
+expected_spatial_merge_size: 2

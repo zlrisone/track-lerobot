@@ -1,0 +1,141 @@
+{
+  "dtype": "float16",
+  "embeddings_sha256": "679d623a352c4243d8d8603b89c86aacf2230b7b1a9414420307f22ccac8f519",
+  "finite": true,
+  "max_abs_repeat_error": 0.0,
+  "processor": {
+    "do_convert_rgb": true,
+    "do_normalize": true,
+    "do_rescale": true,
+    "do_resize": true,
+    "image_grid_thw": [
+      1,
+      24,
+      24
+    ],
+    "image_mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "image_processor_class": "Qwen2VLImageProcessorFast",
+    "image_std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "model_out_hidden_size": 2048,
+    "model_patch_size": 16,
+    "model_spatial_merge_size": 2,
+    "model_temporal_patch_size": 2,
+    "post_merger_grid": [
+      12,
+      12
+    ],
+    "post_merger_tokens": 144,
+    "pre_merger_tokens": 576,
+    "processor_class": "Qwen3VLProcessor",
+    "processor_merge_size": 2,
+    "processor_patch_size": 16,
+    "processor_size": {
+      "longest_edge": 16777216,
+      "shortest_edge": 65536
+    },
+    "processor_temporal_patch_size": 2,
+    "rescale_factor": 0.00392156862745098,
+    "resize": {
+      "external_resample": "PIL.Image.Resampling.BICUBIC_if_needed",
+      "height": 384,
+      "width": 384
+    },
+    "rgb_conversion": "OpenCV BGR decode -> cvtColor(BGR2RGB) -> PIL RGB"
+  },
+  "records": [
+    {
+      "ref": "12e6joG2B2T_2/000000/front",
+      "ref_id": 0,
+      "token_mean": 0.017297785729169846,
+      "token_std": 0.3505515456199646,
+      "video_frame_index": 0,
+      "video_path": "videos/front_image/chunk-000/part-000.mp4"
+    },
+    {
+      "ref": "AeBfp3hTadB_4/000000/front",
+      "ref_id": 118351,
+      "token_mean": 0.017232004553079605,
+      "token_std": 0.34278592467308044,
+      "video_frame_index": 0,
+      "video_path": "videos/front_image/chunk-000/part-032.mp4"
+    },
+    {
+      "ref": "KAzjXJvZtR3_1/000000/front",
+      "ref_id": 226961,
+      "token_mean": 0.01665216125547886,
+      "token_std": 0.3208220899105072,
+      "video_frame_index": 0,
+      "video_path": "videos/front_image/chunk-001/part-014.mp4"
+    },
+    {
+      "ref": "TNx8nti6GNi_3/000000/front",
+      "ref_id": 345210,
+      "token_mean": 0.019182376563549042,
+      "token_std": 0.3500277101993561,
+      "video_frame_index": 0,
+      "video_path": "videos/front_image/chunk-001/part-046.mp4"
+    },
+    {
+      "ref": "aosjAwX5Lnq_20/000000/front",
+      "ref_id": 465744,
+      "token_mean": 0.01334842387586832,
+      "token_std": 0.3283807635307312,
+      "video_frame_index": 0,
+      "video_path": "videos/front_image/chunk-002/part-028.mp4"
+    },
+    {
+      "ref": "iePHCSf119p_12/000000/front",
+      "ref_id": 578608,
+      "token_mean": 0.01670870929956436,
+      "token_std": 0.30077502131462097,
+      "video_frame_index": 0,
+      "video_path": "videos/front_image/chunk-003/part-010.mp4"
+    },
+    {
+      "ref": "qpcpnP8TosR_18/000000/front",
+      "ref_id": 690176,
+      "token_mean": 0.01655016466975212,
+      "token_std": 0.34387949109077454,
+      "video_frame_index": 0,
+      "video_path": "videos/front_image/chunk-003/part-042.mp4"
+    },
+    {
+      "ref": "zsNo4HB9uLZ_8/000000/front",
+      "ref_id": 806536,
+      "token_mean": 0.01201339066028595,
+      "token_std": 0.32561632990837097,
+      "video_frame_index": 0,
+      "video_path": "videos/front_image/chunk-004/part-025.mp4"
+    }
+  ],
+  "runtime": {
+    "cuda_available": true,
+    "cuda_devices": [
+      "NVIDIA A800-SXM4-80GB"
+    ],
+    "cuda_runtime": "12.4",
+    "cudnn": 90100,
+    "numpy": "1.26.4",
+    "opencv": "4.11.0",
+    "pillow": "10.4.0",
+    "pyarrow": "25.0.1",
+    "python": "3.11.14",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.6"
+  },
+  "samples": 8,
+  "shape": [
+    8,
+    4,
+    2048
+  ],
+  "split": "DT"
+}

@@ -1,0 +1,8 @@
+numpy>=1.26,<2
+opencv-python-headless>=4.11,<5
+Pillow>=10,<12
+pyarrow>=20,<26
+PyYAML>=6,<7
+torch>=2.6
+tqdm>=4.67,<5
+transformers>=4.57.6,<4.58

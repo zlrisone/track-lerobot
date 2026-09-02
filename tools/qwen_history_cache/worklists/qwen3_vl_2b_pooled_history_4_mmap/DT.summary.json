@@ -1,0 +1,36 @@
+{
+  "decoded_samples": [
+    {
+      "channels": 3,
+      "height": 384,
+      "ref_id": 0,
+      "video_frame_index": 0,
+      "video_path": "videos/front_image/chunk-000/part-000.mp4",
+      "width": 384
+    },
+    {
+      "channels": 3,
+      "height": 384,
+      "ref_id": 404090,
+      "video_frame_index": 1827,
+      "video_path": "videos/front_image/chunk-002/part-011.mp4",
+      "width": 384
+    },
+    {
+      "channels": 3,
+      "height": 384,
+      "ref_id": 808181,
+      "video_frame_index": 1651,
+      "video_path": "videos/front_image/chunk-004/part-025.mp4",
+      "width": 384
+    }
+  ],
+  "probed_video_count": 226,
+  "rows": 808182,
+  "split": "DT",
+  "split_root": "/data1/yizhang/data/evt-bench/DT",
+  "video_check": "bounds",
+  "video_count": 226,
+  "worklist_path": "/data1/yizhang/cache/worklists/qwen3_vl_2b_pooled_history_4_mmap/DT.parquet",
+  "worklist_sha256": "3e686ab8c0db613c70fec09b5c738a87c5d7c57402d83b9204e7d16fea848249"
+}
